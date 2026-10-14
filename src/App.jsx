@@ -6,6 +6,7 @@ import ContactDirectory from './components/ContactDirectory';
 import ReminderEngine from './components/ReminderEngine';
 import RoiCalculator from './components/RoiCalculator';
 import CabModal from './components/CabModal';
+import OutcomeChart from './components/OutcomeChart';
 import Footer from './components/Footer';
 import { initialContacts } from './data/mockContacts';
 
@@ -67,6 +68,9 @@ export default function App() {
             document.getElementById('intake-widget')?.scrollIntoView({ behavior: 'smooth' });
           }}
         />
+
+        {/* Julien Bek $1:$6 Economic Engine / Larry Ellison Proof */}
+        <OutcomeChart onCtaClick={() => setIsCabModalOpen(true)} />
 
         {/* Quick Context Intake Widget (Stage 1 & 2 Core Functional Engine) */}
         <QuickIntakeWidget
